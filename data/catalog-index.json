@@ -1,11 +1,17 @@
 {
-  "updatedAt": "2026-11-25T13:15:56.731Z",
-  "publishedCount": 8,
-  "stagedCount": 7,
+  "updatedAt": "2026-11-25T22:37:24.320Z",
+  "publishedCount": 9,
+  "stagedCount": 6,
   "published": [
     {
       "slug": "amazon-fba-margin-roas-calculator",
       "shortTitle": "Amazon FBA Margin Calculator",
+      "category": "ecommerce",
+      "updatedAt": "2026-11-25"
+    },
+    {
+      "slug": "ebay-final-value-fee-calculator",
+      "shortTitle": "eBay Final Value Fee Calculator",
       "category": "ecommerce",
       "updatedAt": "2026-11-25"
     },
@@ -53,12 +59,6 @@
     }
   ],
   "staged": [
-    {
-      "slug": "ebay-final-value-fee-calculator",
-      "shortTitle": "eBay Final Value Fee Calculator",
-      "category": "ecommerce",
-      "queuedOrder": 1
-    },
     {
       "slug": "gumroad-lemonsqueezy-fee-comparison",
       "shortTitle": "Gumroad vs Lemon Squeezy Fees",
