@@ -36,6 +36,9 @@ function renderHead({ title, description, canonical, config, jsonLdList = [] }) 
   const gscHead = config.googleSiteVerification
     ? `<meta name="google-site-verification" content="${escapeHtml(config.googleSiteVerification)}">`
     : "";
+  const impactHead = config.impactSiteVerification
+    ? `<meta name='impact-site-verification' value='${escapeHtml(config.impactSiteVerification)}'>`
+    : "";
   const ldScripts = jsonLdList
     .map((item) => `<script type="application/ld+json">${safeJsonLd(item)}</script>`)
     .join("\n  ");
@@ -48,6 +51,7 @@ function renderHead({ title, description, canonical, config, jsonLdList = [] }) 
   <title>${escapeHtml(fullTitle)}</title>
   <meta name="description" content="${escapeHtml(description)}">
   ${gscHead}
+  ${impactHead}
   <link rel="canonical" href="${escapeHtml(canonical)}">
   <meta property="og:site_name" content="${escapeHtml(config.siteName)}">
   <meta property="og:title" content="${escapeHtml(fullTitle)}">
