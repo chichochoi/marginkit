@@ -27,13 +27,13 @@
     "isAffiliate": false
   },
   "creator": {
-    "partnerName": "Lemon Squeezy",
-    "badge": "Merchant of Record",
-    "headline": "Sell digital products globally without US & EU sales tax headaches",
-    "description": "Compare flat-rate Merchant of Record pricing with built-in global tax compliance, license keys, and subscription management.",
-    "ctaText": "Explore Lemon Squeezy",
-    "url": "https://www.lemonsqueezy.com/",
-    "isAffiliate": false
+    "partnerName": "beehiiv",
+    "badge": "Creator Newsletter Platform",
+    "headline": "Keep 100% of paid subscription revenue with 0% platform take rate",
+    "description": "Stop losing 5%–12% to creator platform fees—launch paid newsletters, sponsorships, and digital memberships on beehiiv with zero commission beyond Stripe.",
+    "ctaText": "Start Free on beehiiv",
+    "url": "https://www.beehiiv.com/?via=u3rfubfuge",
+    "isAffiliate": true
   },
   "freelance": {
     "partnerName": "Wise Business",
