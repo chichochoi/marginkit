@@ -1,0 +1,212 @@
+[
+  {
+    "slug": "poshmark-mercari-depop-fee-calculator",
+    "category": "ecommerce",
+    "title": "Poshmark vs. Mercari vs. Depop Seller Fee Calculator",
+    "targetKeywords": ["poshmark fee calculator", "mercari seller fees", "depop fee profit"],
+    "formulaNotes": "Compare Poshmark ($2.95 under $15 / 20% over $15), Mercari (10% seller fee), and Depop US (0% selling fee + 3.3% + $0.45 boosting/processing)."
+  },
+  {
+    "slug": "airbnb-vrbo-host-net-payout-calculator",
+    "category": "ecommerce",
+    "title": "Airbnb vs. Vrbo Host Payout & Occupancy Margin Calculator",
+    "targetKeywords": ["airbnb host fee calculator", "vrbo service fee calculator", "short term rental net payout"],
+    "formulaNotes": "Model nightly rate, occupancy %, cleaning fee, Airbnb 3% vs 15% host-only fee, Vrbo 8% commission, and cleaning/utility overhead."
+  },
+  {
+    "slug": "stripe-ach-vs-card-b2b-invoice-calculator",
+    "category": "payments",
+    "title": "Stripe ACH vs. Credit Card B2B Invoice Fee Calculator",
+    "targetKeywords": ["stripe ach fee calculator", "ach vs credit card fee", "b2b invoice savings"],
+    "formulaNotes": "Compare Stripe Card (2.9% + $0.30) vs Stripe ACH Direct Debit (0.8% capped at $5.00) per invoice and annual B2B retainer volume."
+  },
+  {
+    "slug": "california-ab5-1099-vs-w2-cost-calculator",
+    "category": "tax",
+    "title": "California 1099 Contractor vs. W-2 Take-Home Tax Calculator",
+    "targetKeywords": ["california 1099 tax calculator", "ca freelancer tax", "california self employment calculator"],
+    "formulaNotes": "Federal SE tax + federal brackets + California progressive income tax brackets + CA LLC $800 minimum franchise tax toggle."
+  },
+  {
+    "slug": "texas-no-income-tax-freelancer-calculator",
+    "category": "tax",
+    "title": "Texas 1099 Freelancer Tax & Net Take-Home Calculator",
+    "targetKeywords": ["texas 1099 tax calculator", "texas self employment tax", "texas freelancer take home"],
+    "formulaNotes": "0% state personal income tax, federal 15.3% SE tax, QBI 20% deduction, and quarterly IRS Form 1040-ES vouchers."
+  },
+  {
+    "slug": "new-york-nyc-freelancer-tax-calculator",
+    "category": "tax",
+    "title": "New York & NYC 1099 Freelancer Tax Calculator",
+    "targetKeywords": ["nyc freelancer tax calculator", "new york 1099 tax", "nyc ubt tax calculator"],
+    "formulaNotes": "Federal SE + income tax plus NYS state tax, NYC local income tax (~3.8%), and NYC Unincorporated Business Tax threshold check."
+  },
+  {
+    "slug": "shopify-chargeback-win-rate-roi-calculator",
+    "category": "payments",
+    "title": "Shopify & Stripe Chargeback Fee & Dispute ROI Calculator",
+    "targetKeywords": ["chargeback cost calculator", "stripe dispute fee", "ecommerce fraud loss calculator"],
+    "formulaNotes": "Order revenue lost + COGS + shipping + $15 dispute fee minus recovered disputes based on win rate."
+  },
+  {
+    "slug": "amazon-kdp-royalty-print-cost-calculator",
+    "category": "creator",
+    "title": "Amazon KDP Paperback & eBook Royalty Calculator",
+    "targetKeywords": ["amazon kdp royalty calculator", "kdp print cost calculator", "self publishing profit"],
+    "formulaNotes": "eBook 70% (minus $0.15/MB delivery) vs 35%, and Paperback 60% minus fixed + per-page black/color printing cost."
+  },
+  {
+    "slug": "udemy-teachable-kajabi-course-profit-calculator",
+    "category": "creator",
+    "title": "Udemy vs. Teachable vs. Kajabi Course Profit Calculator",
+    "targetKeywords": ["teachable vs kajabi profit", "udemy instructor revenue", "online course margin calculator"],
+    "formulaNotes": "Compare Udemy organic (37% creator share) vs coupon link (97%) against Teachable/Kajabi monthly SaaS + card fees."
+  },
+  {
+    "slug": "fiverr-seller-take-home-calculator",
+    "category": "freelance",
+    "title": "Fiverr Seller 20% Commission & Net Payout Calculator",
+    "targetKeywords": ["fiverr fee calculator", "fiverr 20 percent fee", "fiverr reverse pricing"],
+    "formulaNotes": "Fiverr flat 20% seller commission on gigs and tips + Promoted Gigs ad spend + reverse price solver."
+  },
+  {
+    "slug": "twitch-kick-streamer-sub-payout-calculator",
+    "category": "creator",
+    "title": "Twitch vs. Kick Streamer Subscription Payout Calculator",
+    "targetKeywords": ["twitch sub payout calculator", "kick 95 5 split", "streamer income calculator"],
+    "formulaNotes": "Compare Twitch 50/50 vs 70/30 Partner Plus tier after mobile pricing/processing vs Kick 95/5 creator split."
+  },
+  {
+    "slug": "doordash-ubereats-restaurant-commission-calculator",
+    "category": "ecommerce",
+    "title": "DoorDash & Uber Eats Restaurant Commission Margin Calculator",
+    "targetKeywords": ["doordash restaurant commission calculator", "uber eats merchant fees", "delivery app profit margin"],
+    "formulaNotes": "Compare 15%/25%/30% delivery app tiers, food cost %, packaging cost, and menu markup offset needed to keep dine-in margin."
+  },
+  {
+    "slug": "square-pos-retail-fee-margin-calculator",
+    "category": "payments",
+    "title": "Square POS In-Person vs. Online Fee Calculator",
+    "targetKeywords": ["square pos fee calculator", "square card present fee", "square invoice fee"],
+    "formulaNotes": "Compare Square card-present (2.6% + $0.15), online checkout (2.9% + $0.30), and keyed-in (3.5% + $0.15) processing."
+  },
+  {
+    "slug": "klarna-affirm-afterpay-merchant-fee-roi-calculator",
+    "category": "payments",
+    "title": "BNPL Merchant Fee ROI Calculator (Klarna, Affirm, Afterpay)",
+    "targetKeywords": ["afterpay merchant fee calculator", "affirm merchant fee roi", "bnpl aov lift calculator"],
+    "formulaNotes": "Weigh 5.99% + $0.30 BNPL merchant processing against incremental conversion lift and AOV lift vs standard 2.9% cards."
+  },
+  {
+    "slug": "whatnot-live-auction-seller-fee-calculator",
+    "category": "ecommerce",
+    "title": "Whatnot Live Seller Fee & Net Profit Calculator",
+    "targetKeywords": ["whatnot seller fee calculator", "whatnot 8 percent fee", "live selling profit"],
+    "formulaNotes": "Whatnot 8% commission (or 4% coins/bullion) + 2.9% + $0.30 processing on item + shipping + sales tax base."
+  },
+  {
+    "slug": "stockx-goat-sneaker-resale-profit-calculator",
+    "category": "ecommerce",
+    "title": "StockX vs. GOAT Sneaker Resale Net Profit Calculator",
+    "targetKeywords": ["stockx seller fee calculator", "goat fee calculator", "sneaker resale profit"],
+    "formulaNotes": "Compare StockX Seller Level 1–5 transaction fees (9%–7%) + 3% processing + shipping vs GOAT 9.5% + $5 cashout fee."
+  },
+  {
+    "slug": "walmart-marketplace-seller-wfs-profit-calculator",
+    "category": "ecommerce",
+    "title": "Walmart Marketplace & WFS Fulfillment Profit Calculator",
+    "targetKeywords": ["walmart marketplace fee calculator", "walmart wfs calculator", "walmart seller margin"],
+    "formulaNotes": "Walmart category referral fee (6%–15%), WFS fulfillment/storage per unit, COGS, and Sponsored Search ad spend."
+  },
+  {
+    "slug": "substack-vs-beehiiv-newsletter-profit-calculator",
+    "category": "creator",
+    "title": "Substack 10% Cut vs. beehiiv Flat SaaS Profit Calculator",
+    "targetKeywords": ["substack vs beehiiv cost", "newsletter monetization calculator", "beehiiv paid subs profit"],
+    "formulaNotes": "Solve exact subscriber MRR crossover where beehiiv flat monthly SaaS beats Substack's 10% + 0.7% billing revenue share."
+  },
+  {
+    "slug": "meta-ads-cpa-break-even-roas-calculator",
+    "category": "ecommerce",
+    "title": "Meta Ads Max CPA & Break-Even ROAS Calculator",
+    "targetKeywords": ["break even roas calculator", "meta ads max cpa", "facebook ads profit calculator"],
+    "formulaNotes": "Compute gross margin after COGS, shipping, and processing to derive Max Allowable CPA and Break-Even ROAS + scaling target ROAS."
+  },
+  {
+    "slug": "dropshipping-aliexpress-tiktok-margin-calculator",
+    "category": "ecommerce",
+    "title": "US Dropshipping Margin, Ad CPA & Refund Buffer Calculator",
+    "targetKeywords": ["dropshipping profit calculator", "dropshipping break even roas", "shopify dropshipping margin"],
+    "formulaNotes": "Supplier unit + shipping cost, Shopify processing, Meta/TikTok CPA, and 5% dispute/refund reserve."
+  },
+  {
+    "slug": "solo-401k-sep-ira-tax-savings-calculator",
+    "category": "tax",
+    "title": "Solo 401(k) vs. SEP-IRA Max Contribution & Tax Savings",
+    "targetKeywords": ["solo 401k contribution calculator", "sep ira vs solo 401k", "1099 retirement tax deduction"],
+    "formulaNotes": "Employee elective deferral ($23,500+) + 20% net adjusted SE employer contribution vs SEP-IRA 20% limit."
+  },
+  {
+    "slug": "florida-1099-freelancer-tax-calculator",
+    "category": "tax",
+    "title": "Florida 1099 Independent Contractor Tax Calculator",
+    "targetKeywords": ["florida 1099 tax calculator", "florida self employment tax", "florida freelancer take home"],
+    "formulaNotes": "0% state individual income tax, federal 15.3% SE tax, standard deduction, 20% QBI, and quarterly 1040-ES payments."
+  },
+  {
+    "slug": "turo-car-sharing-host-profit-calculator",
+    "category": "freelance",
+    "title": "Turo Host Plan Net Payout, Depreciation & ROI Calculator",
+    "targetKeywords": ["turo host profit calculator", "turo 75 vs 90 plan", "car sharing roi calculator"],
+    "formulaNotes": "Compare Turo 90/85/80/75/60 host protection plans against monthly auto loan, insurance, maintenance, and depreciation."
+  },
+  {
+    "slug": "us-sales-tax-nexus-threshold-checker",
+    "category": "tax",
+    "title": "US Multi-State Economic Sales Tax Nexus Checker",
+    "targetKeywords": ["sales tax nexus calculator", "economic nexus 100k threshold", "ecommerce sales tax nexus"],
+    "formulaNotes": "Compare direct vs marketplace sales against major US state $100k / 200-transaction economic nexus rules."
+  },
+  {
+    "slug": "wholesale-to-retail-keystone-margin-calculator",
+    "category": "ecommerce",
+    "title": "Wholesale vs. Retail Keystone Margin & Markup Calculator",
+    "targetKeywords": ["wholesale margin calculator", "markup vs margin calculator", "retail pricing formula"],
+    "formulaNotes": "Convert landed unit cost into Wholesale Price, MSRP (keystone 2x/2.5x), gross margin %, and distributor discount."
+  },
+  {
+    "slug": "patreon-vs-ko-fi-membership-fee-calculator",
+    "category": "creator",
+    "title": "Patreon vs. Ko-fi Creator Membership Fee Calculator",
+    "targetKeywords": ["kofi vs patreon fees", "ko-fi fee calculator", "creator membership payout"],
+    "formulaNotes": "Compare Ko-fi 0% donation / 5% membership (or $12/mo Contributor) against Patreon 8%–12% + card processing."
+  },
+  {
+    "slug": "podcast-sponsorship-cpm-revenue-calculator",
+    "category": "creator",
+    "title": "Podcast Dynamic Ad & Host-Read CPM Revenue Calculator",
+    "targetKeywords": ["podcast sponsorship calculator", "podcast cpm calculator", "podcast ad revenue"],
+    "formulaNotes": "Pre-roll ($18 CPM), mid-roll ($25 CPM), and post-roll ($12 CPM) across monthly 30-day episode downloads minus agency 20%–30% cut."
+  },
+  {
+    "slug": "consulting-retainer-margin-scope-calculator",
+    "category": "freelance",
+    "title": "Consulting Retainer Effective Hourly Rate & Margin Calculator",
+    "targetKeywords": ["consulting retainer calculator", "agency retainer margin", "effective hourly rate calculator"],
+    "formulaNotes": "Monthly retainer fee minus subcontractor costs and software divided by actual team hours to track effective hourly yield."
+  },
+  {
+    "slug": "influencer-ugc-brand-deal-pricing-calculator",
+    "category": "creator",
+    "title": "UGC Creator & Influencer Brand Deal Rate Calculator",
+    "targetKeywords": ["ugc pricing calculator", "influencer rate calculator", "brand deal pricing"],
+    "formulaNotes": "Base production fee + usage rights multiplier (3/6/12 months) + whitelisting + exclusivity add-ons."
+  },
+  {
+    "slug": "stripe-connect-marketplace-take-rate-calculator",
+    "category": "payments",
+    "title": "Stripe Connect Two-Sided Marketplace Margin Calculator",
+    "targetKeywords": ["stripe connect fee calculator", "marketplace take rate calculator", "platform fee margin"],
+    "formulaNotes": "Model marketplace GMV, platform take rate %, Stripe Connect $2/mo active account + 0.25% payout + 2.9% + $0.30 card fee."
+  }
+]

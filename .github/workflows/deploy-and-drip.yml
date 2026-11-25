@@ -1,0 +1,82 @@
+name: MarginKit Cloud Drip & Deploy Pages
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    # Runs daily at 13:17 UTC (08:17 US Eastern / 22:17 KST)
+    - cron: "17 13 * * *"
+  workflow_dispatch:
+    inputs:
+      force_drip:
+        description: "Force-promote 1 staged calculator even if already published today"
+        required: false
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  drip-build-deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Drip-promote 1 staged calculator (on schedule or manual dispatch)
+        id: drip
+        if: github.event_name == 'schedule' || github.event.inputs.force_drip == 'true'
+        env:
+          FORCE_DRIP: ${{ github.event.inputs.force_drip == 'true' && '1' || '0' }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          node scripts/drip-publish.mjs
+          if [ -n "$(git status --porcelain)" ]; then
+            node scripts/build.mjs
+            git add tools/ data/publish-log.json data/catalog-index.json
+            git commit -m "chore(drip): publish daily calculator"
+            git pull --rebase origin main
+            git push origin main
+          else
+            echo "No staged tool changes to commit."
+          fi
+
+      - name: Verify & Build Static Site
+        run: |
+          npm run verify
+          npm run build
+
+      - name: Setup GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./dist
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+      - name: Ping IndexNow if new calculator promoted
+        if: steps.drip.outputs.promoted == 'true'
+        run: node scripts/drip-publish.mjs --ping-only
