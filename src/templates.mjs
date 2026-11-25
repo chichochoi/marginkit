@@ -33,6 +33,9 @@ function renderHead({ title, description, canonical, config, jsonLdList = [] }) 
   const gaHead = config.gaMeasurementId
     ? `<script async src="https://www.googletagmanager.com/gtag/js?id=${escapeHtml(config.gaMeasurementId)}"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${escapeHtml(config.gaMeasurementId)}');</script>`
     : "";
+  const gscHead = config.googleSiteVerification
+    ? `<meta name="google-site-verification" content="${escapeHtml(config.googleSiteVerification)}">`
+    : "";
   const ldScripts = jsonLdList
     .map((item) => `<script type="application/ld+json">${safeJsonLd(item)}</script>`)
     .join("\n  ");
@@ -44,6 +47,7 @@ function renderHead({ title, description, canonical, config, jsonLdList = [] }) 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>${escapeHtml(fullTitle)}</title>
   <meta name="description" content="${escapeHtml(description)}">
+  ${gscHead}
   <link rel="canonical" href="${escapeHtml(canonical)}">
   <meta property="og:site_name" content="${escapeHtml(config.siteName)}">
   <meta property="og:title" content="${escapeHtml(fullTitle)}">
