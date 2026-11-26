@@ -9,14 +9,21 @@ import {
   canonicalUrl,
   getTodayUtc,
   loadAffiliates,
+  loadPublishLog,
   loadSiteConfig
 } from "../src/lib.mjs";
+import {
+  buildEnhancedRssXml,
+  buildToolSocialEntry,
+  renderDefaultOgSvg
+} from "../src/social.mjs";
 import {
   buildTrustPages,
   escapeHtml,
   renderCalculatorPage,
   renderCategoryPage,
   renderHomePage,
+  renderPromoKitPage,
   renderTrustPage
 } from "../src/templates.mjs";
 import { verifyAllTools } from "./verify.mjs";
@@ -44,40 +51,21 @@ ${entries}
 `;
 }
 
-function buildRssXml(tools, config) {
-  const siteUrl = canonicalUrl(config.siteOrigin, config.basePath, "/");
-  const sorted = [...tools].sort((a, b) => b.meta.updatedAt.localeCompare(a.meta.updatedAt)).slice(0, 20);
-  const items = sorted
-    .map((t) => {
-      const link = canonicalUrl(config.siteOrigin, config.basePath, `/tools/${t.meta.slug}/`);
-      return `  <item>
-    <title>${escapeHtml(t.meta.title)}</title>
-    <link>${escapeHtml(link)}</link>
-    <guid>${escapeHtml(link)}</guid>
-    <pubDate>${new Date(`${t.meta.updatedAt}T12:00:00Z`).toUTCString()}</pubDate>
-    <description>${escapeHtml(t.meta.metaDescription)}</description>
-  </item>`;
-    })
-    .join("\n");
-  return `<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0">
-<channel>
-  <title>${escapeHtml(config.siteName)}</title>
-  <link>${escapeHtml(siteUrl)}</link>
-  <description>${escapeHtml(config.tagline)}</description>
-${items}
-</channel>
-</rss>
-`;
-}
-
 export async function buildSite() {
   const { published, staged } = await verifyAllTools();
-  const [config, affiliates] = await Promise.all([loadSiteConfig(), loadAffiliates()]);
+  const [config, affiliates, publishLog] = await Promise.all([
+    loadSiteConfig(),
+    loadAffiliates(),
+    loadPublishLog()
+  ]);
   const today = getTodayUtc();
 
   await fs.rm(DIST_DIR, { recursive: true, force: true });
-  await fs.mkdir(path.join(DIST_DIR, "assets"), { recursive: true });
+  await Promise.all([
+    fs.mkdir(path.join(DIST_DIR, "assets"), { recursive: true }),
+    fs.mkdir(path.join(DIST_DIR, "og"), { recursive: true }),
+    fs.mkdir(path.join(DIST_DIR, "pins"), { recursive: true })
+  ]);
 
   await Promise.all([
     fs.copyFile(path.join(ROOT_DIR, "src", "styles.css"), path.join(DIST_DIR, "assets", "styles.css")),
@@ -89,6 +77,11 @@ export async function buildSite() {
 
   const sortedPublished = [...published].sort((a, b) =>
     a.meta.shortTitle.localeCompare(b.meta.shortTitle)
+  );
+
+  await writeFileEnsuringDir(
+    path.join(DIST_DIR, "og", "default.svg"),
+    renderDefaultOgSvg(config, sortedPublished.length)
   );
 
   const sitemapUrls = [
@@ -106,7 +99,10 @@ export async function buildSite() {
     renderHomePage({ tools: sortedPublished, config })
   );
 
-  // Published calculator pages
+  const socialEntries = [];
+  const socialBySlug = new Map();
+
+  // Published calculator pages + zero-token SVG cards & social copy pack
   for (const tool of sortedPublished) {
     const html = renderCalculatorPage({
       tool,
@@ -114,7 +110,16 @@ export async function buildSite() {
       config,
       affiliates
     });
-    await writeFileEnsuringDir(path.join(DIST_DIR, "tools", tool.meta.slug, "index.html"), html);
+    const { entry, ogSvg, pinSvg } = buildToolSocialEntry(tool, config);
+    socialEntries.push(entry);
+    socialBySlug.set(tool.meta.slug, entry);
+
+    await Promise.all([
+      writeFileEnsuringDir(path.join(DIST_DIR, "tools", tool.meta.slug, "index.html"), html),
+      writeFileEnsuringDir(path.join(DIST_DIR, "og", `${tool.meta.slug}.svg`), ogSvg),
+      writeFileEnsuringDir(path.join(DIST_DIR, "pins", `${tool.meta.slug}.svg`), pinSvg)
+    ]);
+
     sitemapUrls.push({
       loc: canonicalUrl(config.siteOrigin, config.basePath, `/tools/${tool.meta.slug}/`),
       lastmod: tool.meta.updatedAt || today,
@@ -122,6 +127,35 @@ export async function buildSite() {
       priority: "0.9"
     });
   }
+
+  // Sort social entries newest-first for operator convenience
+  const sortedSocialEntries = [...socialEntries].sort((a, b) => {
+    const cmp = String(b.updatedAt || "").localeCompare(String(a.updatedAt || ""));
+    return cmp !== 0 ? cmp : a.shortTitle.localeCompare(b.shortTitle);
+  });
+
+  // Unlisted noindex operator promo-kit page + JSON pack
+  const socialPackPayload =
+    JSON.stringify(
+      {
+        updatedAt: new Date().toISOString(),
+        rssFeedUrl: canonicalUrl(config.siteOrigin, config.basePath, "/rss.xml"),
+        promoKitUrl: canonicalUrl(config.siteOrigin, config.basePath, "/promo-kit/"),
+        count: sortedSocialEntries.length,
+        items: sortedSocialEntries
+      },
+      null,
+      2
+    ) + "\n";
+
+  await Promise.all([
+    writeFileEnsuringDir(
+      path.join(DIST_DIR, "promo-kit", "index.html"),
+      renderPromoKitPage({ socialEntries: sortedSocialEntries, config })
+    ),
+    writeFileEnsuringDir(path.join(DIST_DIR, "social-pack.json"), socialPackPayload),
+    writeFileEnsuringDir(path.join(DATA_DIR, "social-pack.json"), socialPackPayload)
+  ]);
 
   // Category pages
   for (const category of CATEGORY_LIST) {
@@ -151,12 +185,15 @@ export async function buildSite() {
 
   // Sitemaps, RSS, robots, .nojekyll, IndexNow key
   const sitemapUrl = canonicalUrl(config.siteOrigin, config.basePath, "/sitemap.xml");
-  const robotsTxt = `User-agent: *\nAllow: /\n\nSitemap: ${sitemapUrl}\n`;
+  const robotsTxt = `User-agent: *\nAllow: /\nDisallow: ${config.basePath || ""}/promo-kit/\n\nSitemap: ${sitemapUrl}\n`;
 
   await Promise.all([
     writeFileEnsuringDir(path.join(DIST_DIR, "sitemap.xml"), buildSitemapXml(sitemapUrls)),
     writeFileEnsuringDir(path.join(DIST_DIR, "robots.txt"), robotsTxt),
-    writeFileEnsuringDir(path.join(DIST_DIR, "rss.xml"), buildRssXml(sortedPublished, config)),
+    writeFileEnsuringDir(
+      path.join(DIST_DIR, "rss.xml"),
+      buildEnhancedRssXml({ tools: sortedPublished, socialBySlug, publishLog, config })
+    ),
     writeFileEnsuringDir(path.join(DIST_DIR, ".nojekyll"), ""),
     writeFileEnsuringDir(path.join(DIST_DIR, `${config.indexNowKey}.txt`), `${config.indexNowKey}\n`)
   ]);
@@ -187,7 +224,8 @@ export async function buildSite() {
   return {
     publishedCount: sortedPublished.length,
     stagedCount: staged.length,
-    totalPages: 1 + sortedPublished.length + CATEGORY_LIST.length + trustPages.length
+    svgCount: 1 + sortedPublished.length * 2,
+    totalPages: 2 + sortedPublished.length + CATEGORY_LIST.length + trustPages.length
   };
 }
 
@@ -198,7 +236,7 @@ if (isMain) {
     const summary = await buildSite();
     const elapsed = Date.now() - start;
     console.log(
-      `BUILT: ${summary.totalPages} HTML pages (${summary.publishedCount} live tools, ${summary.stagedCount} staged) in ${elapsed}ms.`
+      `BUILT: ${summary.totalPages} HTML pages, ${summary.svgCount} SVG social cards (${summary.publishedCount} live tools, ${summary.stagedCount} staged) in ${elapsed}ms.`
     );
   } catch (err) {
     console.error(err.message);

@@ -1,0 +1,270 @@
+{
+  "updatedAt": "2026-11-26T06:31:02.378Z",
+  "rssFeedUrl": "https://chichochoi.github.io/marginkit/rss.xml",
+  "promoKitUrl": "https://chichochoi.github.io/marginkit/promo-kit/",
+  "count": 9,
+  "items": [
+    {
+      "slug": "amazon-fba-margin-roas-calculator",
+      "shortTitle": "Amazon FBA Margin Calculator",
+      "title": "Amazon FBA Fee, Net Margin & Break-Even ACOS Calculator",
+      "category": "ecommerce",
+      "updatedAt": "2026-11-25",
+      "url": "https://chichochoi.github.io/marginkit/tools/amazon-fba-margin-roas-calculator/",
+      "ogImageUrl": "https://chichochoi.github.io/marginkit/og/amazon-fba-margin-roas-calculator.svg",
+      "pinImageUrl": "https://chichochoi.github.io/marginkit/pins/amazon-fba-margin-roas-calculator.svg",
+      "sampleInputs": "Amazon Sale Price: $34.99, Category Referral Fee: 15 %",
+      "kpiSummary": "Net Profit / Unit: $8.84 | Net Margin: 25.25% | Break-Even ACOS: 43.25%",
+      "rssSummary": "Most operators underestimate hidden fee stacking on Amazon FBA Margin. Baseline (Amazon Sale Price: $34.99, Category Referral Fee: 15 %) → Net Profit / Unit: $8.84 | Net Margin: 25.25% | Break-E… Tip: Optimize Packaging to Drop 1 Size Tier: Shaving 0.2 inches off box height can move a product from Large Standard to Small Standar…",
+      "threadsBluesky": "Most operators underestimate hidden fee stacking on Amazon FBA Margin. Baseline (Amazon Sale Price: $34.99, Category Referral Fee: 15 %) → Net Profit / Unit: $8.84 | Net Margin: 25.25% | Break-E…\n\nFree 2026 interactive breakdown: https://chichochoi.github.io/marginkit/tools/amazon-fba-margin-roas-calculator/\n#EcommerceSeller #ProfitMargins",
+      "pinterest": {
+        "board": "Etsy, Amazon & E-Commerce Seller Margins",
+        "title": "Amazon FBA Margin Calculator (2026 US Fee & Profit Cheat Sheet)",
+        "description": "Estimate 2026 Amazon US FBA fulfillment fees, 15% referral commission, storage, PPC ACOS, and return losses to find true break-even ACOS and ROAS. Baseline (Amazon Sale Price: $34.99, Category Referral Fee: 15 %) → Net Profit / Unit: $8.84 | Net Margin: 25.25% | Break-Even ACOS: 43.25%. Pro tip: Optimize Packaging to Drop 1 Size Tier: Shaving 0.2 inches off box height can move a product from Large Standard to Small Standard, saving $0.80–$1.40 per unit permanently. #EcommerceSeller #P…",
+        "link": "https://chichochoi.github.io/marginkit/tools/amazon-fba-margin-roas-calculator/",
+        "imageUrl": "https://chichochoi.github.io/marginkit/pins/amazon-fba-margin-roas-calculator.svg"
+      },
+      "reddit": {
+        "subreddits": [
+          "r/FulfillmentByAmazon",
+          "r/AmazonSeller"
+        ],
+        "title": "2026 US Math Breakdown: Amazon FBA Margin Calculator (Exact Order of Operations + Sample Scenario)",
+        "bodyMarkdown": "Put together a clean 2026 breakdown for anyone modeling **Amazon FBA Margin Calculator** unit economics (Amazon Sale Price: $34.99, Category Referral Fee: 15 %):\n\n### 1. Baseline Numbers\n- **Summary:** Net Profit / Unit: $8.84 | Net Margin: 25.25% | Break-Even ACOS: 43.25%\n- **Verdict:** Healthy FBA profit margin — Keep PPC ACOS below 43.3% to remain profitable.\n\n| Component | Amount | Share |\n| :--- | ---: | ---: |\n| Net Profit | $8.84 | 25.25% |\n| Amazon Referral, FBA & Storage | $11.36 | 32.46% |\n| PPC Ad Spend | $6.30 | 18.0% |\n| Landed COGS | $8.50 | 24.29% |\n\n### 2. Order of Operations\n1. Referral Fee = Sale Price × Referral % (15% for most US categories)\n2. Return Loss Reserve = (FBA Fee + 20% of Referral Fee) × Return Rate %\n3. Total Amazon Fees = Referral Fee + FBA Fee + Storage/Inbound + Return Loss Reserve\n4. Break-Even ACOS = (Sale Price - Total Amazon Fees - Landed COGS) / Sale Price\n\n### 3. Practical Margin Takeaways\n- **Optimize Packaging to Drop 1 Size Tier:** Shaving 0.2 inches off box height can move a product from Large Standard to Small Standard, saving $0.80–$1.40 per unit permanently.\n- **Track TACoS Alongside ACOS:** ACOS measures ad-attributed sales only, whereas TACoS divides total ad spend by total store revenue to show organic ranking lift.\n- **Don't Ignore Q4 Peak Storage:** Standard storage triples in Q4; avoid over-sending slow inventory in September to protect annual net margin.\n\n*(If you want to plug in your own SKU/retainer numbers in the browser, I put the free interactive version here: https://chichochoi.github.io/marginkit/tools/amazon-fba-margin-roas-calculator/)*"
+      }
+    },
+    {
+      "slug": "ebay-final-value-fee-calculator",
+      "shortTitle": "eBay Final Value Fee Calculator",
+      "title": "eBay US Final Value Fee & Net Profit Calculator (2026)",
+      "category": "ecommerce",
+      "updatedAt": "2026-11-25",
+      "url": "https://chichochoi.github.io/marginkit/tools/ebay-final-value-fee-calculator/",
+      "ogImageUrl": "https://chichochoi.github.io/marginkit/og/ebay-final-value-fee-calculator.svg",
+      "pinImageUrl": "https://chichochoi.github.io/marginkit/pins/ebay-final-value-fee-calculator.svg",
+      "sampleInputs": "Item Sale Price: $60, Shipping Charged to Buyer: $8",
+      "kpiSummary": "Net Profit: $29.37 | Net Margin: 43.19% | Total eBay + Ad Fees: $12.13",
+      "rssSummary": "Most operators underestimate hidden fee stacking on eBay Final Value Fee. Baseline (Item Sale Price: $60, Shipping Charged to Buyer: $8) → Net Profit: $29.37 | Net Margin: 43.19% | Total eBay +… Tip: Compare Store Subscription Break-Even: A Starter or Basic eBay Store cuts Final Value Fees in many categories by ~0.9%–1.25%, pay…",
+      "threadsBluesky": "Most operators underestimate hidden fee stacking on eBay Final Value Fee. Baseline (Item Sale Price: $60, Shipping Charged to Buyer: $8) → Net Profit: $29.37 | Net Margin: 43.19% | Total eBay +…\n\nFree 2026 interactive breakdown: https://chichochoi.github.io/marginkit/tools/ebay-final-value-fee-calculator/\n#EcommerceSeller #ProfitMargins",
+      "pinterest": {
+        "board": "Etsy, Amazon & E-Commerce Seller Margins",
+        "title": "eBay Final Value Fee Calculator (2026 US Fee & Profit Cheat Sheet)",
+        "description": "Calculate 2026 eBay US Final Value Fees (13.25% + $0.40), Promoted Listings ad rates, shipping costs, and true seller profit margin per order. Baseline (Item Sale Price: $60, Shipping Charged to Buyer: $8) → Net Profit: $29.37 | Net Margin: 43.19% | Total eBay + Ad Fees: $12.13. Pro tip: Compare Store Subscription Break-Even: A Starter or Basic eBay Store cuts Final Value Fees in many categories by ~0.9%–1.25%, paying for itself around $2,500/mo GMV. #EcommerceSeller #ProfitMargins",
+        "link": "https://chichochoi.github.io/marginkit/tools/ebay-final-value-fee-calculator/",
+        "imageUrl": "https://chichochoi.github.io/marginkit/pins/ebay-final-value-fee-calculator.svg"
+      },
+      "reddit": {
+        "subreddits": [
+          "r/Ebay",
+          "r/Flipping"
+        ],
+        "title": "2026 US Math Breakdown: eBay Final Value Fee Calculator (Exact Order of Operations + Sample Scenario)",
+        "bodyMarkdown": "Put together a clean 2026 breakdown for anyone modeling **eBay Final Value Fee Calculator** unit economics (Item Sale Price: $60, Shipping Charged to Buyer: $8):\n\n### 1. Baseline Numbers\n- **Summary:** Net Profit: $29.37 | Net Margin: 43.19% | Total eBay + Ad Fees: $12.13\n- **Verdict:** Healthy eBay resale margin — Combined eBay and Promoted Listings fees consume 17.8% of gross revenue.\n\n| Component | Amount | Share |\n| :--- | ---: | ---: |\n| Net Profit | $29.37 | 43.19% |\n| eBay Final Value Fee | $9.41 | 13.84% |\n| Promoted Listings | $2.72 | 4.0% |\n| COGS & Label Cost | $26.50 | 38.97% |\n\n### 2. Order of Operations\n1. Gross Order Base = Item Sale Price + Shipping Charged to Buyer\n2. Final Value Fee = (Gross Order Base × Category FVF %) + ($0.40 if order > $10, else $0.30)\n3. Promoted Listings Fee = Gross Order Base × Promoted Ad Rate %\n4. Net Profit = Gross Order Base - Final Value Fee - Promoted Listings Fee - COGS - Label Cost\n\n### 3. Practical Margin Takeaways\n- **Compare Store Subscription Break-Even:** A Starter or Basic eBay Store cuts Final Value Fees in many categories by ~0.9%–1.25%, paying for itself around $2,500/mo GMV.\n- **Check Category Caps for High-Ticket Gear:** For items over $7,500 in select categories, eBay drops the Final Value Fee to 2.35% on the portion above $7,500.\n- **Audit Promoted Listings Attribution:** Keep General campaign ad rates around 2%–5% for high-demand SKUs rather than auto-accepting high suggested rates.\n\n*(If you want to plug in your own SKU/retainer numbers in the browser, I put the free interactive version here: https://chichochoi.github.io/marginkit/tools/ebay-final-value-fee-calculator/)*"
+      }
+    },
+    {
+      "slug": "etsy-fee-profit-calculator",
+      "shortTitle": "Etsy Fee & Profit Calculator",
+      "title": "Etsy Seller Fee & Net Profit Calculator (2026 US)",
+      "category": "ecommerce",
+      "updatedAt": "2026-11-25",
+      "url": "https://chichochoi.github.io/marginkit/tools/etsy-fee-profit-calculator/",
+      "ogImageUrl": "https://chichochoi.github.io/marginkit/og/etsy-fee-profit-calculator.svg",
+      "pinImageUrl": "https://chichochoi.github.io/marginkit/pins/etsy-fee-profit-calculator.svg",
+      "sampleInputs": "Item Sale Price: $45, Shipping Charged to Buyer: $5",
+      "kpiSummary": "Net Profit: $28.30 | Net Margin: 56.6% | Total Etsy Fees: $5.20",
+      "rssSummary": "Most operators underestimate hidden fee stacking on Etsy Fee & Profit. Baseline (Item Sale Price: $45, Shipping Charged to Buyer: $5) → Net Profit: $28.30 | Net Margin: 56.6% | Total Etsy Fees:… Tip: Price for Mandatory 12% Offsite Ads: Once your shop crosses $10,000 in trailing 12-month sales, Offsite Ads become permanent. Bui…",
+      "threadsBluesky": "Most operators underestimate hidden fee stacking on Etsy Fee & Profit. Baseline (Item Sale Price: $45, Shipping Charged to Buyer: $5) → Net Profit: $28.30 | Net Margin: 56.6% | Total Etsy Fees:…\n\nFree 2026 interactive breakdown: https://chichochoi.github.io/marginkit/tools/etsy-fee-profit-calculator/\n#EcommerceSeller #ProfitMargins",
+      "pinterest": {
+        "board": "Etsy, Amazon & E-Commerce Seller Margins",
+        "title": "Etsy Fee & Profit Calculator (2026 US Fee & Profit Cheat Sheet)",
+        "description": "Calculate exact 2026 Etsy listing, 6.5% transaction, payment processing, and Offsite Ads fees to find your true net profit and break-even price. Baseline (Item Sale Price: $45, Shipping Charged to Buyer: $5) → Net Profit: $28.30 | Net Margin: 56.6% | Total Etsy Fees: $5.20. Pro tip: Price for Mandatory 12% Offsite Ads: Once your shop crosses $10,000 in trailing 12-month sales, Offsite Ads become permanent. Build a 3–5% blended ad reserve into every SKU. #EcommerceSeller #ProfitMargins",
+        "link": "https://chichochoi.github.io/marginkit/tools/etsy-fee-profit-calculator/",
+        "imageUrl": "https://chichochoi.github.io/marginkit/pins/etsy-fee-profit-calculator.svg"
+      },
+      "reddit": {
+        "subreddits": [
+          "r/EtsySellers",
+          "r/Etsy"
+        ],
+        "title": "2026 US Math Breakdown: Etsy Fee & Profit Calculator (Exact Order of Operations + Sample Scenario)",
+        "bodyMarkdown": "Put together a clean 2026 breakdown for anyone modeling **Etsy Fee & Profit Calculator** unit economics (Item Sale Price: $45, Shipping Charged to Buyer: $5):\n\n### 1. Baseline Numbers\n- **Summary:** Net Profit: $28.30 | Net Margin: 56.6% | Total Etsy Fees: $5.20\n- **Verdict:** Strong Etsy unit margin — Etsy keeps 10.4% of gross revenue on this order.\n\n| Component | Amount | Share |\n| :--- | ---: | ---: |\n| Net Profit | $28.30 | 56.6% |\n| Transaction & Listing Fees | $3.45 | 6.9% |\n| Etsy Payments Processing | $1.75 | 3.5% |\n| COGS & Label Cost | $16.50 | 33.0% |\n\n### 2. Order of Operations\n1. Gross Order Total = Item Sale Price + Shipping Charged to Buyer\n2. Transaction Fee = Gross Order Total × 6.5% (applies to item and shipping)\n3. Etsy Payments Fee = (Gross Order Total × 3.0%) + $0.25\n4. Offsite Ads Fee = Gross Order Total × (0%, 12%, or 15%)\n5. Net Profit = Gross Order Total - Listing Fee ($0.20) - Transaction Fee - Payment Fee - Offsite Ads - COGS - Label Cost\n\n### 3. Practical Margin Takeaways\n- **Price for Mandatory 12% Offsite Ads:** Once your shop crosses $10,000 in trailing 12-month sales, Offsite Ads become permanent. Build a 3–5% blended ad reserve into every SKU.\n- **Stop Subsidizing Free Shipping Losses:** Whether you charge $5 shipping separately or roll $5 into the item price, Etsy charges the exact same 9.5% combined fee base.\n- **Watch Sub-$12 Listings:** Fixed $0.45 fees ($0.20 listing + $0.25 payment) consume nearly 5% extra on a $10 item. Bundle stickers or digital items into packs.\n\n*(If you want to plug in your own SKU/retainer numbers in the browser, I put the free interactive version here: https://chichochoi.github.io/marginkit/tools/etsy-fee-profit-calculator/)*"
+      }
+    },
+    {
+      "slug": "freelance-hourly-to-w2-rate-calculator",
+      "shortTitle": "Freelance Rate vs W-2 Calculator",
+      "title": "US Freelance Hourly Rate to W-2 Equivalent Calculator (2026)",
+      "category": "freelance",
+      "updatedAt": "2026-11-25",
+      "url": "https://chichochoi.github.io/marginkit/tools/freelance-hourly-to-w2-rate-calculator/",
+      "ogImageUrl": "https://chichochoi.github.io/marginkit/og/freelance-hourly-to-w2-rate-calculator.svg",
+      "pinImageUrl": "https://chichochoi.github.io/marginkit/pins/freelance-hourly-to-w2-rate-calculator.svg",
+      "sampleInputs": "Target Equivalent W-2 Salary: $100,000, Unpaid Vacation & Sick Weeks / Yr: 4",
+      "kpiSummary": "Minimum Hourly Rate: $102.29 | Equivalent 8h Day Rate: $818.30 | Target Monthly Billing: $10,637.92",
+      "rssSummary": "Most operators underestimate hidden fee stacking on Freelance Rate vs W-2. Baseline (Target Equivalent W-2 Salary: $100,000, Unpaid Vacation & Sick Weeks / Yr: 4) → Minimum Hourly Rate: $102.29… Tip: Stop Dividing W-2 Salary by 2,080 Hours: A $100k W-2 salary is $48/hr on paper, but charging $48/hr as a 1099 contractor leaves y…",
+      "threadsBluesky": "Most operators underestimate hidden fee stacking on Freelance Rate vs W-2. Baseline (Target Equivalent W-2 Salary: $100,000, Unpaid Vacation & Sick Weeks / Yr: 4) → Minimum Hourly Rate: $102.29…\n\nFree 2026 interactive breakdown: https://chichochoi.github.io/marginkit/tools/freelance-hourly-to-w2-rate-calculator/\n#FreelanceLife #ConsultingRates",
+      "pinterest": {
+        "board": "Freelance Pricing & Independent Consulting",
+        "title": "Freelance Rate vs W-2 Calculator (2026 US Fee & Profit Cheat Sheet)",
+        "description": "Convert a target US W-2 salary into the required freelance hourly rate, day rate, and monthly retainer after unpaid PTO, self-employment tax, and overhead. Baseline (Target Equivalent W-2 Salary: $100,000, Unpaid Vacation & Sick Weeks / Yr: 4) → Minimum Hourly Rate: $102.29 | Equivalent 8h Day Rate: $818.30 | Target Monthly Billing: $10,637.92. Pro tip: Stop Dividing W-2 Salary by 2,080 Hours: A $100k W-2 salary is $48/hr on paper, but charging $48/hr as a 1099 contractor leaves you t…",
+        "link": "https://chichochoi.github.io/marginkit/tools/freelance-hourly-to-w2-rate-calculator/",
+        "imageUrl": "https://chichochoi.github.io/marginkit/pins/freelance-hourly-to-w2-rate-calculator.svg"
+      },
+      "reddit": {
+        "subreddits": [
+          "r/freelance",
+          "r/consulting"
+        ],
+        "title": "2026 US Math Breakdown: Freelance Rate vs W-2 Calculator (Exact Order of Operations + Sample Scenario)",
+        "bodyMarkdown": "Put together a clean 2026 breakdown for anyone modeling **Freelance Rate vs W-2 Calculator** unit economics (Target Equivalent W-2 Salary: $100,000, Unpaid Vacation & Sick Weeks / Yr: 4):\n\n### 1. Baseline Numbers\n- **Summary:** Minimum Hourly Rate: $102.29 | Equivalent 8h Day Rate: $818.30 | Target Monthly Billing: $10,637.92\n- **Verdict:** Charge at least $102/hr (or $818/day) — Based on 1248 billable hours/year across 48 working weeks.\n\n| Component | Amount | Share |\n| :--- | ---: | ---: |\n| Equivalent W-2 Compensation | $100,000.00 | 78.34% |\n| Employer FICA Offset (7.65%) | $7,650.00 | 5.99% |\n| Annual Overhead & Benefits | $8,400.00 | 6.58% |\n| Margin & Bench Buffer | $11,605.00 | 9.09% |\n\n### 2. Order of Operations\n1. Employer FICA Offset = Target W-2 Salary × 7.65%\n2. Required Gross Revenue = (Target Salary + Employer FICA Offset + Annual Overhead) × (1 + Buffer %)\n3. Annual Billable Hours = (52 - Unpaid Weeks) × 40 × Billable Utilization %\n4. Required Hourly Rate = Required Gross Revenue / Annual Billable Hours\n\n### 3. Practical Margin Takeaways\n- **Stop Dividing W-2 Salary by 2,080 Hours:** A $100k W-2 salary is $48/hr on paper, but charging $48/hr as a 1099 contractor leaves you taking home closer to $55k after taxes and unbilled hours.\n- **Use Monthly Retainers to Stabilize Utilization:** Locking 2–3 anchor clients onto fixed monthly retainers pushes utilization above 70% and shrinks unpaid sales hours.\n- **Price Day Rates at 8× Minimum Hourly:** Day rates discourage scope-creeping hourly micromanagement while honoring your minimum effective hourly floor.\n\n*(If you want to plug in your own SKU/retainer numbers in the browser, I put the free interactive version here: https://chichochoi.github.io/marginkit/tools/freelance-hourly-to-w2-rate-calculator/)*"
+      }
+    },
+    {
+      "slug": "shopify-fee-margin-calculator",
+      "shortTitle": "Shopify Fee & Margin Calculator",
+      "title": "Shopify Transaction Fee, Margin & Break-Even ROAS Calculator",
+      "category": "ecommerce",
+      "updatedAt": "2026-11-25",
+      "url": "https://chichochoi.github.io/marginkit/tools/shopify-fee-margin-calculator/",
+      "ogImageUrl": "https://chichochoi.github.io/marginkit/og/shopify-fee-margin-calculator.svg",
+      "pinImageUrl": "https://chichochoi.github.io/marginkit/pins/shopify-fee-margin-calculator.svg",
+      "sampleInputs": "Order Subtotal: $65, Shipping Collected: $0",
+      "kpiSummary": "Net Profit / Order: $24.81 | Net Margin: 38.18% | Break-Even ROAS: 1.67",
+      "rssSummary": "Most operators underestimate hidden fee stacking on Shopify Fee & Margin. Baseline (Order Subtotal: $65, Shipping Collected: $0) → Net Profit / Order: $24.81 | Net Margin: 38.18% | Break-Even RO… Tip: Calculate Break-Even ROAS Before Scaling Ads: Never rely on Meta or Google Ads dashboard ROAS alone—compare actual platform ROAS…",
+      "threadsBluesky": "Most operators underestimate hidden fee stacking on Shopify Fee & Margin. Baseline (Order Subtotal: $65, Shipping Collected: $0) → Net Profit / Order: $24.81 | Net Margin: 38.18% | Break-Even RO…\n\nFree 2026 interactive breakdown: https://chichochoi.github.io/marginkit/tools/shopify-fee-margin-calculator/\n#EcommerceSeller #ProfitMargins",
+      "pinterest": {
+        "board": "Etsy, Amazon & E-Commerce Seller Margins",
+        "title": "Shopify Fee & Margin Calculator (2026 US Fee & Profit Cheat Sheet)",
+        "description": "Calculate Shopify Payments processing rates (Basic, Grow, Advanced), third-party gateway surcharges, unit profit margin, and break-even ad ROAS. Baseline (Order Subtotal: $65, Shipping Collected: $0) → Net Profit / Order: $24.81 | Net Margin: 38.18% | Break-Even ROAS: 1.67. Pro tip: Calculate Break-Even ROAS Before Scaling Ads: Never rely on Meta or Google Ads dashboard ROAS alone—compare actual platform ROAS against your Break-Even ROAS after fulfillment. #EcommerceSeller #ProfitMarg…",
+        "link": "https://chichochoi.github.io/marginkit/tools/shopify-fee-margin-calculator/",
+        "imageUrl": "https://chichochoi.github.io/marginkit/pins/shopify-fee-margin-calculator.svg"
+      },
+      "reddit": {
+        "subreddits": [
+          "r/shopify",
+          "r/ecommerce"
+        ],
+        "title": "2026 US Math Breakdown: Shopify Fee & Margin Calculator (Exact Order of Operations + Sample Scenario)",
+        "bodyMarkdown": "Put together a clean 2026 breakdown for anyone modeling **Shopify Fee & Margin Calculator** unit economics (Order Subtotal: $65, Shipping Collected: $0):\n\n### 1. Baseline Numbers\n- **Summary:** Net Profit / Order: $24.81 | Net Margin: 38.18% | Break-Even ROAS: 1.67\n- **Verdict:** Scalable DTC unit economics — You need at least 1.67x ROAS to break even on ad spend.\n\n| Component | Amount | Share |\n| :--- | ---: | ---: |\n| Net Profit | $24.81 | 38.18% |\n| Ad Spend (CPA) | $14.00 | 21.54% |\n| Card & Gateway Fees | $2.19 | 3.36% |\n| COGS & Fulfillment | $24.00 | 36.92% |\n\n### 2. Order of Operations\n1. Gross Revenue = Order Subtotal + Shipping Collected\n2. Processing Fee = (Gross Revenue × Plan Card Rate) + $0.30\n3. External Gateway Surcharge = Gross Revenue × (2.0% Basic, 1.0% Grow, or 0.6% Advanced) if enabled\n4. Contribution Before Ads = Gross Revenue - Processing - Surcharge - COGS - Fulfillment\n5. Break-Even ROAS = Gross Revenue / Contribution Before Ads\n\n### 3. Practical Margin Takeaways\n- **Calculate Break-Even ROAS Before Scaling Ads:** Never rely on Meta or Google Ads dashboard ROAS alone—compare actual platform ROAS against your Break-Even ROAS after fulfillment.\n- **Audit When to Upgrade From Basic to Grow:** The 0.2% processing reduction saves $200 per $100k in monthly GMV. Upgrade only when fee savings exceed the monthly plan price jump.\n- **Use Bundles to Dilute Fixed Shipping Costs:** Adding a high-margin upsell lifts AOV while pick-and-pack and $0.30 fixed fees remain nearly constant.\n\n*(If you want to plug in your own SKU/retainer numbers in the browser, I put the free interactive version here: https://chichochoi.github.io/marginkit/tools/shopify-fee-margin-calculator/)*"
+      }
+    },
+    {
+      "slug": "stripe-paypal-fee-calculator",
+      "shortTitle": "Stripe & PayPal Fee Calculator",
+      "title": "Stripe & PayPal Fee Calculator + Reverse Net Payout (2026)",
+      "category": "payments",
+      "updatedAt": "2026-11-25",
+      "url": "https://chichochoi.github.io/marginkit/tools/stripe-paypal-fee-calculator/",
+      "ogImageUrl": "https://chichochoi.github.io/marginkit/og/stripe-paypal-fee-calculator.svg",
+      "pinImageUrl": "https://chichochoi.github.io/marginkit/pins/stripe-paypal-fee-calculator.svg",
+      "sampleInputs": "Invoice or Target Net Amount: $100, Calculation Mode: Standard: Deduct Fees From Invoice",
+      "kpiSummary": "Net Payout You Keep: $96.80 | Total Amount Charged: $100.00 | Processing Fee: $3.20",
+      "rssSummary": "Most operators underestimate hidden fee stacking on Stripe & PayPal Fee. Baseline (Invoice or Target Net Amount: $100, Calculation Mode: Standard: Deduct Fees From Invoice) → Net Payout You Keep… Tip: Use Reverse Math Correctly: Adding 2.9% + $0.30 directly to a $100 invoice still leaves you short because the processor takes 2.9…",
+      "threadsBluesky": "Most operators underestimate hidden fee stacking on Stripe & PayPal Fee. Baseline (Invoice or Target Net Amount: $100, Calculation Mode: Standard: Deduct Fees From Invoice) → Net Payout You Keep…\n\nFree 2026 interactive breakdown: https://chichochoi.github.io/marginkit/tools/stripe-paypal-fee-calculator/\n#SaaSFounders #Stripe",
+      "pinterest": {
+        "board": "Payment Processing & SaaS Unit Economics",
+        "title": "Stripe & PayPal Fee Calculator (2026 US Fee & Profit Cheat Sheet)",
+        "description": "Compare 2026 US Stripe and PayPal merchant processing fees, international card surcharges, and exact reverse invoice totals needed to hit your net target. Baseline (Invoice or Target Net Amount: $100, Calculation Mode: Standard: Deduct Fees From Invoice) → Net Payout You Keep: $96.80 | Total Amount Charged: $100.00 | Processing Fee: $3.20. Pro tip: Use Reverse Math Correctly: Adding 2.9% + $0.30 directly to a $100 invoice still leaves you short because the processor takes 2.9% of the…",
+        "link": "https://chichochoi.github.io/marginkit/tools/stripe-paypal-fee-calculator/",
+        "imageUrl": "https://chichochoi.github.io/marginkit/pins/stripe-paypal-fee-calculator.svg"
+      },
+      "reddit": {
+        "subreddits": [
+          "r/SaaS",
+          "r/Entrepreneur"
+        ],
+        "title": "2026 US Math Breakdown: Stripe & PayPal Fee Calculator (Exact Order of Operations + Sample Scenario)",
+        "bodyMarkdown": "Put together a clean 2026 breakdown for anyone modeling **Stripe & PayPal Fee Calculator** unit economics (Invoice or Target Net Amount: $100, Calculation Mode: Standard: Deduct Fees From Invoice):\n\n### 1. Baseline Numbers\n- **Summary:** Net Payout You Keep: $96.80 | Total Amount Charged: $100.00 | Processing Fee: $3.20\n- **Verdict:** Merchant payout calculated — Effective processing drag is 3.20% on $100.00 charged.\n\n| Component | Amount | Share |\n| :--- | ---: | ---: |\n| Net Payout | $96.80 | 96.8% |\n| Base Processor Fee | $3.20 | 3.2% |\n| Cross-Border / FX Add-On | $0.00 | 0.0% |\n\n### 2. Order of Operations\n1. Effective Rate = Base Processor % + International Surcharge (1.5%) + FX Conversion (1.0%)\n2. Standard Mode: Fee = (Gross × Effective Rate) + Fixed Cent Fee; Net = Gross - Fee\n3. Reverse Mode: Gross to Charge = (Target Net + Fixed Cent Fee) / (1 - Effective Rate)\n\n### 3. Practical Margin Takeaways\n- **Use Reverse Math Correctly:** Adding 2.9% + $0.30 directly to a $100 invoice still leaves you short because the processor takes 2.9% of the new higher total.\n- **Switch B2B Invoices Above $1,500 to ACH:** Stripe ACH Direct Debit costs 0.8% capped at $5, saving $24+ on a single $1,000 client retainer compared to card rails.\n- **Watch International + FX Stacking:** Cross-border corporate cards with currency conversion push total Stripe processing to 5.4% + $0.30.\n\n*(If you want to plug in your own SKU/retainer numbers in the browser, I put the free interactive version here: https://chichochoi.github.io/marginkit/tools/stripe-paypal-fee-calculator/)*"
+      }
+    },
+    {
+      "slug": "patreon-substack-creator-take-home-calculator",
+      "shortTitle": "Substack & Patreon Payout Calculator",
+      "title": "Substack vs. Patreon Creator Take-Home Calculator (2026)",
+      "category": "creator",
+      "updatedAt": "2026-11-25",
+      "url": "https://chichochoi.github.io/marginkit/tools/patreon-substack-creator-take-home-calculator/",
+      "ogImageUrl": "https://chichochoi.github.io/marginkit/og/patreon-substack-creator-take-home-calculator.svg",
+      "pinImageUrl": "https://chichochoi.github.io/marginkit/pins/patreon-substack-creator-take-home-calculator.svg",
+      "sampleInputs": "Paid Subscribers / Patrons: 250, Monthly Tier Price: $8",
+      "kpiSummary": "Monthly Net Take-Home: $1,605.39 | Annualized Net Income: $19,264.65 | Gross Monthly Equivalent: $1,925.00",
+      "rssSummary": "Most operators underestimate hidden fee stacking on Substack & Patreon Payout. Baseline (Paid Subscribers / Patrons: 250, Monthly Tier Price: $8) → Monthly Net Take-Home: $1,605.39 | Annualized… Tip: Encourage Annual Upgrades to Cut Fixed Stripe Drag: On a $5/month tier, $0.30 monthly consumes 6% extra in fixed fees. Annual bil…",
+      "threadsBluesky": "Most operators underestimate hidden fee stacking on Substack & Patreon Payout. Baseline (Paid Subscribers / Patrons: 250, Monthly Tier Price: $8) → Monthly Net Take-Home: $1,605.39 | Annualized…\n\nFree 2026 interactive breakdown: https://chichochoi.github.io/marginkit/tools/patreon-substack-creator-take-home-calculator/\n#CreatorEconomy #NewsletterGrowth",
+      "pinterest": {
+        "board": "Creator Economy & Paid Newsletter Revenue",
+        "title": "Substack & Patreon Payout Calculator (2026 US Fee & Profit Cheat Sheet)",
+        "description": "Calculate monthly and annual net creator income on Substack and Patreon after platform fees, Stripe processing, billing charges, and annual plan discounts. Baseline (Paid Subscribers / Patrons: 250, Monthly Tier Price: $8) → Monthly Net Take-Home: $1,605.39 | Annualized Net Income: $19,264.65 | Gross Monthly Equivalent: $1,925.00. Pro tip: Encourage Annual Upgrades to Cut Fixed Stripe Drag: On a $5/month tier, $0.30 monthly consumes 6% extra in fixed fees. Annual billing slashes fixed…",
+        "link": "https://chichochoi.github.io/marginkit/tools/patreon-substack-creator-take-home-calculator/",
+        "imageUrl": "https://chichochoi.github.io/marginkit/pins/patreon-substack-creator-take-home-calculator.svg"
+      },
+      "reddit": {
+        "subreddits": [
+          "r/CreatorEconomy",
+          "r/SideProject"
+        ],
+        "title": "2026 US Math Breakdown: Substack & Patreon Payout Calculator (Exact Order of Operations + Sample Scenario)",
+        "bodyMarkdown": "Put together a clean 2026 breakdown for anyone modeling **Substack & Patreon Payout Calculator** unit economics (Paid Subscribers / Patrons: 250, Monthly Tier Price: $8):\n\n### 1. Baseline Numbers\n- **Summary:** Monthly Net Take-Home: $1,605.39 | Annualized Net Income: $19,264.65 | Gross Monthly Equivalent: $1,925.00\n- **Verdict:** You keep 83.4% of gross creator revenue — Total platform and payment drag is $319.61/month.\n\n| Component | Amount | Share |\n| :--- | ---: | ---: |\n| Creator Net Payout | $1,605.39 | 83.4% |\n| Platform Fee | $192.50 | 10.0% |\n| Card & Billing Processing | $127.11 | 6.6% |\n\n### 2. Order of Operations\n1. Monthly Equivalent Gross = (Monthly Subs × Price) + (Annual Subs × Price × 12 × 0.85 / 12)\n2. Platform Take = Monthly Equivalent Gross × Platform Rate (10% Substack, 8% Patreon Pro, 12% Premium)\n3. Processing & Billing = (Monthly Equivalent Gross × Card/Billing %) + ($0.30 per monthly charge + amortized annual $0.30/12)\n\n### 3. Practical Margin Takeaways\n- **Encourage Annual Upgrades to Cut Fixed Stripe Drag:** On a $5/month tier, $0.30 monthly consumes 6% extra in fixed fees. Annual billing slashes fixed cents by 92%.\n- **Avoid Apple In-App Purchase Surcharges:** Prompt followers to subscribe via web checkout links rather than iOS in-app buttons where Apple's 30% cut applies.\n- **Compare Owned ESPs Above $5k/mo MRR:** Once recurring gross passes $5,000/month, flat-fee newsletter stacks often save $400+/month vs. 10% revenue shares.\n\n*(If you want to plug in your own SKU/retainer numbers in the browser, I put the free interactive version here: https://chichochoi.github.io/marginkit/tools/patreon-substack-creator-take-home-calculator/)*"
+      }
+    },
+    {
+      "slug": "tiktok-shop-us-fee-calculator",
+      "shortTitle": "TikTok Shop Fee Calculator",
+      "title": "TikTok Shop US Seller Fee & Affiliate Margin Calculator (2026)",
+      "category": "ecommerce",
+      "updatedAt": "2026-11-25",
+      "url": "https://chichochoi.github.io/marginkit/tools/tiktok-shop-us-fee-calculator/",
+      "ogImageUrl": "https://chichochoi.github.io/marginkit/og/tiktok-shop-us-fee-calculator.svg",
+      "pinImageUrl": "https://chichochoi.github.io/marginkit/pins/tiktok-shop-us-fee-calculator.svg",
+      "sampleInputs": "Listed Retail Price: $29.99, Seller-Funded Discount / Coupon: $3",
+      "kpiSummary": "Net Profit / Order: $8.57 | Net Margin: 31.76% | TikTok + Creator Fees: $5.67",
+      "rssSummary": "Most operators underestimate hidden fee stacking on TikTok Shop Fee. Baseline (Listed Retail Price: $29.99, Seller-Funded Discount / Coupon: $3) → Net Profit / Order: $8.57 | Net Margin: 31.76%… Tip: Never Layer High Discounts and 25% Affiliate Rates Together: Stacking a 20% flash coupon on top of a 20% creator commission quick…",
+      "threadsBluesky": "Most operators underestimate hidden fee stacking on TikTok Shop Fee. Baseline (Listed Retail Price: $29.99, Seller-Funded Discount / Coupon: $3) → Net Profit / Order: $8.57 | Net Margin: 31.76%…\n\nFree 2026 interactive breakdown: https://chichochoi.github.io/marginkit/tools/tiktok-shop-us-fee-calculator/\n#EcommerceSeller #ProfitMargins",
+      "pinterest": {
+        "board": "Etsy, Amazon & E-Commerce Seller Margins",
+        "title": "TikTok Shop Fee Calculator (2026 US Fee & Profit Cheat Sheet)",
+        "description": "Calculate 2026 TikTok Shop US 6% referral fees, creator affiliate commissions, seller coupons, shipping, and break-even affiliate payout rates. Baseline (Listed Retail Price: $29.99, Seller-Funded Discount / Coupon: $3) → Net Profit / Order: $8.57 | Net Margin: 31.76% | TikTok + Creator Fees: $5.67. Pro tip: Never Layer High Discounts and 25% Affiliate Rates Together: Stacking a 20% flash coupon on top of a 20% creator commission quickly erases net profit once shipping is paid. #Ecomm…",
+        "link": "https://chichochoi.github.io/marginkit/tools/tiktok-shop-us-fee-calculator/",
+        "imageUrl": "https://chichochoi.github.io/marginkit/pins/tiktok-shop-us-fee-calculator.svg"
+      },
+      "reddit": {
+        "subreddits": [
+          "r/TikTokShop",
+          "r/ecommerce"
+        ],
+        "title": "2026 US Math Breakdown: TikTok Shop Fee Calculator (Exact Order of Operations + Sample Scenario)",
+        "bodyMarkdown": "Put together a clean 2026 breakdown for anyone modeling **TikTok Shop Fee Calculator** unit economics (Listed Retail Price: $29.99, Seller-Funded Discount / Coupon: $3):\n\n### 1. Baseline Numbers\n- **Summary:** Net Profit / Order: $8.57 | Net Margin: 31.76% | TikTok + Creator Fees: $5.67\n- **Verdict:** Strong TikTok Shop contribution margin — You can offer creators up to 46.8% commission before hitting $0 unit profit.\n\n| Component | Amount | Share |\n| :--- | ---: | ---: |\n| Net Profit | $8.57 | 31.76% |\n| TikTok Referral & Creator Fee | $5.67 | 21.0% |\n| Shop Ads | $2.00 | 7.41% |\n| COGS & Shipping | $10.75 | 39.83% |\n\n### 2. Order of Operations\n1. Net Customer Price = Listed Price - Seller-Funded Discount\n2. Platform Commission = Net Customer Price × Referral % (6% standard US rate)\n3. Creator Commission = Net Customer Price × Affiliate %\n4. Net Profit = Net Customer Price - Platform Commission - Creator Commission - Shipping - COGS - Shop Ads\n\n### 3. Practical Margin Takeaways\n- **Never Layer High Discounts and 25% Affiliate Rates Together:** Stacking a 20% flash coupon on top of a 20% creator commission quickly erases net profit once shipping is paid.\n- **Test Higher Affiliate % With Zero Shop Ads:** Offering creators 18–20% with $0 paid ad spend often beats 10% affiliate + heavy paid Shop Ads.\n- **Factor Free Sample Inventory Cost Separately:** Tracking sample seeding conversion rates separately keeps per-order unit economics clean.\n\n*(If you want to plug in your own SKU/retainer numbers in the browser, I put the free interactive version here: https://chichochoi.github.io/marginkit/tools/tiktok-shop-us-fee-calculator/)*"
+      }
+    },
+    {
+      "slug": "us-1099-self-employment-tax-calculator",
+      "shortTitle": "US 1099 Tax Calculator",
+      "title": "US 1099 Self-Employment & Quarterly Tax Calculator (2026)",
+      "category": "tax",
+      "updatedAt": "2026-11-25",
+      "url": "https://chichochoi.github.io/marginkit/tools/us-1099-self-employment-tax-calculator/",
+      "ogImageUrl": "https://chichochoi.github.io/marginkit/og/us-1099-self-employment-tax-calculator.svg",
+      "pinImageUrl": "https://chichochoi.github.io/marginkit/pins/us-1099-self-employment-tax-calculator.svg",
+      "sampleInputs": "Annual Gross 1099 Revenue: $90,000, Deductible Business Expenses: $12,000",
+      "kpiSummary": "Quarterly 1040-ES Payment: $4,891.50 | Annual Net Take-Home: $58,433.99 | Self-Employment Tax: $11,021.05",
+      "rssSummary": "Most operators underestimate hidden fee stacking on US 1099 Tax. Baseline (Annual Gross 1099 Revenue: $90,000, Deductible Business Expenses: $12,000) → Quarterly 1040-ES Payment: $4,891.50 | Ann… Tip: Automate a Separate Tax Reserve Account: Transfer your effective total tax rate from every 1099 payout into a dedicated high-yiel…",
+      "threadsBluesky": "Most operators underestimate hidden fee stacking on US 1099 Tax. Baseline (Annual Gross 1099 Revenue: $90,000, Deductible Business Expenses: $12,000) → Quarterly 1040-ES Payment: $4,891.50 | Ann…\n\nFree 2026 interactive breakdown: https://chichochoi.github.io/marginkit/tools/us-1099-self-employment-tax-calculator/\n#1099Tax #SmallBusinessTax",
+      "pinterest": {
+        "board": "US 1099 & Small Business Tax Planning",
+        "title": "US 1099 Tax Calculator (2026 US Fee & Profit Cheat Sheet)",
+        "description": "Estimate 2026 US 1099 self-employment tax (15.3%), federal brackets, QBI deduction, state tax, and IRS Form 1040-ES quarterly payments. Baseline (Annual Gross 1099 Revenue: $90,000, Deductible Business Expenses: $12,000) → Quarterly 1040-ES Payment: $4,891.50 | Annual Net Take-Home: $58,433.99 | Self-Employment Tax: $11,021.05. Pro tip: Automate a Separate Tax Reserve Account: Transfer your effective total tax rate from every 1099 payout into a dedicated high-yield business savings ac…",
+        "link": "https://chichochoi.github.io/marginkit/tools/us-1099-self-employment-tax-calculator/",
+        "imageUrl": "https://chichochoi.github.io/marginkit/pins/us-1099-self-employment-tax-calculator.svg"
+      },
+      "reddit": {
+        "subreddits": [
+          "r/smallbusiness",
+          "r/tax",
+          "r/freelance"
+        ],
+        "title": "2026 US Math Breakdown: US 1099 Tax Calculator (Exact Order of Operations + Sample Scenario)",
+        "bodyMarkdown": "Put together a clean 2026 breakdown for anyone modeling **US 1099 Tax Calculator** unit economics (Annual Gross 1099 Revenue: $90,000, Deductible Business Expenses: $12,000):\n\n### 1. Baseline Numbers\n- **Summary:** Quarterly 1040-ES Payment: $4,891.50 | Annual Net Take-Home: $58,433.99 | Self-Employment Tax: $11,021.05\n- **Verdict:** Reserve 25.1% of net profit for taxes — Set aside $1631/month to cover $4892 quarterly IRS & state payments.\n\n| Component | Amount | Share |\n| :--- | ---: | ---: |\n| After-Tax Take-Home | $58,433.99 | 74.92% |\n| Self-Employment Tax | $11,021.05 | 14.13% |\n| Federal Income Tax | $4,920.49 | 6.31% |\n| State Income Tax | $3,624.47 | 4.65% |\n\n### 2. Order of Operations\n1. Net Schedule C Profit = Gross 1099 Revenue - Business Expenses\n2. SE Taxable Earnings = Net Profit × 92.35%; SE Tax = 12.4% Social Security (up to $176,100 cap) + 2.9% Medicare (+0.9% over threshold)\n3. Federal Taxable Income = Net Profit - (50% SE Tax) - Standard Deduction - 20% QBI Deduction (if eligible)\n4. Quarterly 1040-ES Payment = (SE Tax + Progressive Federal Tax + Estimated State Tax) / 4\n\n### 3. Practical Margin Takeaways\n- **Automate a Separate Tax Reserve Account:** Transfer your effective total tax rate from every 1099 payout into a dedicated high-yield business savings account on payday.\n- **Use the Safe Harbor Rule to Avoid Penalties:** Paying 100% of last year's tax liability (110% if prior AGI exceeded $150k) in quarterly installments typically protects against underpayment penalties.\n- **Consider Solo 401(k) or SEP-IRA Contributions:** Traditional retirement contributions cut federal income tax at your top marginal bracket while keeping cash invested for yourself.\n\n*(If you want to plug in your own SKU/retainer numbers in the browser, I put the free interactive version here: https://chichochoi.github.io/marginkit/tools/us-1099-self-employment-tax-calculator/)*"
+      }
+    }
+  ]
+}

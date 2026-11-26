@@ -1,12 +1,12 @@
 {
   "ecommerce": {
-    "partnerName": "Shopify",
-    "badge": "Storefront Platform",
-    "headline": "Build your own direct-to-consumer store with lower fees",
-    "description": "Reduce marketplace commission dependency by shifting repeat buyers to an owned storefront with integrated checkout and shipping discounts.",
-    "ctaText": "Explore Shopify Plans",
-    "url": "https://www.shopify.com/",
-    "isAffiliate": false
+    "partnerName": "EverBee",
+    "badge": "Seller Product Research",
+    "headline": "Validate product demand & real profit margins before you list",
+    "description": "Uncover top-selling SKUs, monthly revenue estimates, and low-competition buyer keywords so your Etsy, Amazon, and Shopify listings stay profitable after marketplace fees.",
+    "ctaText": "Try EverBee Free",
+    "url": "https://www.everbee.io/?via=c7bcd6",
+    "isAffiliate": true
   },
   "payments": {
     "partnerName": "Mercury",
@@ -43,5 +43,6 @@
     "ctaText": "Check Wise Business",
     "url": "https://wise.com/us/business/",
     "isAffiliate": false
-  }
+  },
+  "bySlug": {}
 }

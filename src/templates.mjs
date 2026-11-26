@@ -24,9 +24,26 @@ function safeInlineScriptValue(str) {
   return String(str).replace(/<\/script/gi, "<\\/script");
 }
 
-function renderHead({ title, description, canonical, config, jsonLdList = [] }) {
+function resolvePartner(affiliates, meta) {
+  if (!affiliates || typeof affiliates !== "object") return null;
+  const bySlug = affiliates.bySlug;
+  if (bySlug && typeof bySlug === "object") {
+    if (bySlug[meta.slug]) return bySlug[meta.slug];
+    for (const [pattern, cfg] of Object.entries(bySlug)) {
+      if (pattern.endsWith("*") && meta.slug.startsWith(pattern.slice(0, -1))) {
+        return cfg;
+      }
+    }
+  }
+  return affiliates[meta.category] || null;
+}
+
+function renderHead({ title, description, canonical, config, ogImageRoute = "/og/default.svg", robots = "", jsonLdList = [] }) {
   const fullTitle = `${title} | ${config.siteName}`;
   const cssHref = withBase(config.basePath, "/assets/styles.css");
+  const rssHref = canonicalUrl(config.siteOrigin, config.basePath, "/rss.xml");
+  const ogImageUrl = canonicalUrl(config.siteOrigin, config.basePath, ogImageRoute);
+  const robotsHead = robots ? `<meta name="robots" content="${escapeHtml(robots)}">` : "";
   const adsenseHead = config.adsenseClientId
     ? `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${escapeHtml(config.adsenseClientId)}" crossorigin="anonymous"></script>`
     : "";
@@ -50,17 +67,24 @@ function renderHead({ title, description, canonical, config, jsonLdList = [] }) 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>${escapeHtml(fullTitle)}</title>
   <meta name="description" content="${escapeHtml(description)}">
+  ${robotsHead}
   ${gscHead}
   ${impactHead}
   <link rel="canonical" href="${escapeHtml(canonical)}">
+  <link rel="alternate" type="application/rss+xml" title="${escapeHtml(config.siteName)} RSS Feed" href="${escapeHtml(rssHref)}">
   <meta property="og:site_name" content="${escapeHtml(config.siteName)}">
   <meta property="og:title" content="${escapeHtml(fullTitle)}">
   <meta property="og:description" content="${escapeHtml(description)}">
   <meta property="og:url" content="${escapeHtml(canonical)}">
   <meta property="og:type" content="website">
-  <meta name="twitter:card" content="summary">
+  <meta property="og:image" content="${escapeHtml(ogImageUrl)}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="${escapeHtml(title)}">
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="${escapeHtml(fullTitle)}">
   <meta name="twitter:description" content="${escapeHtml(description)}">
+  <meta name="twitter:image" content="${escapeHtml(ogImageUrl)}">
   <link rel="stylesheet" href="${escapeHtml(cssHref)}">
   ${adsenseHead}
   ${gaHead}
@@ -263,7 +287,7 @@ export function renderCalculatorPage({ tool, allTools, config, affiliates }) {
     0
   );
 
-  const partner = affiliates[m.category];
+  const partner = resolvePartner(affiliates, m);
   const partnerHtml = partner
     ? `<aside class="partner-card" aria-label="Recommended resource">
   <div class="partner-body">
@@ -289,6 +313,7 @@ export function renderCalculatorPage({ tool, allTools, config, affiliates }) {
     description: m.metaDescription,
     canonical,
     config,
+    ogImageRoute: `/og/${m.slug}.svg`,
     jsonLdList: [breadcrumbLd, appLd, faqLd]
   })}
 <body>
@@ -568,6 +593,95 @@ ${renderHeader(config, activeHref)}
   </div>
 </main>
 ${renderFooter(config)}
+</body>
+</html>`;
+}
+
+export function renderPromoKitPage({ socialEntries, config }) {
+  const routePath = "/promo-kit/";
+  const canonical = canonicalUrl(config.siteOrigin, config.basePath, routePath);
+  const rssUrl = canonicalUrl(config.siteOrigin, config.basePath, "/rss.xml");
+
+  const cardsHtml = socialEntries
+    .map((entry, idx) => {
+      const ogHref = withBase(config.basePath, `/og/${entry.slug}.svg`);
+      const pinHref = withBase(config.basePath, `/pins/${entry.slug}.svg`);
+      const toolHref = withBase(config.basePath, `/tools/${entry.slug}/`);
+      const subs = (entry.reddit.subreddits || []).join(" • ");
+      return `<section class="panel" style="margin-bottom:24px;">
+      <div class="panel-header" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;">
+        <div>
+          <span class="badge">${escapeHtml(entry.category)}</span>
+          <h2 class="panel-title" style="margin-top:6px;">${escapeHtml(entry.shortTitle)}</h2>
+          <p style="margin:4px 0 0;color:var(--text-muted);font-size:0.88rem;">${escapeHtml(entry.kpiSummary)}</p>
+        </div>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;">
+          <a class="btn" href="${escapeHtml(toolHref)}" target="_blank" rel="noopener">Open Tool</a>
+          <a class="btn" href="${escapeHtml(ogHref)}" target="_blank" rel="noopener">OG SVG (1200×630)</a>
+          <a class="btn" href="${escapeHtml(pinHref)}" target="_blank" rel="noopener">Pin SVG (1000×1500)</a>
+        </div>
+      </div>
+
+      <div style="display:grid;gap:14px;margin-top:14px;">
+        <div>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
+            <strong>1. US Threads / Bluesky / X Hook</strong>
+            <button type="button" class="btn mk-copy-snippet" data-target="mk-tb-${idx}">Copy Text</button>
+          </div>
+          <textarea id="mk-tb-${idx}" readonly rows="4" style="width:100%;font-family:inherit;font-size:0.9rem;padding:10px;border-radius:8px;border:1px solid var(--border);background:var(--bg-subtle);color:var(--text);">${escapeHtml(entry.threadsBluesky)}</textarea>
+        </div>
+
+        <div>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
+            <strong>2. Pinterest Pin (${escapeHtml(entry.pinterest.board)})</strong>
+            <button type="button" class="btn mk-copy-snippet" data-target="mk-pin-${idx}">Copy Title + Desc</button>
+          </div>
+          <textarea id="mk-pin-${idx}" readonly rows="4" style="width:100%;font-family:inherit;font-size:0.9rem;padding:10px;border-radius:8px;border:1px solid var(--border);background:var(--bg-subtle);color:var(--text);">${escapeHtml(`Title: ${entry.pinterest.title}\n\nDescription: ${entry.pinterest.description}\n\nDestination: ${entry.pinterest.link}`)}</textarea>
+        </div>
+
+        <div>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
+            <strong>3. Reddit Value Breakdown (${escapeHtml(subs)})</strong>
+            <button type="button" class="btn mk-copy-snippet" data-target="mk-rd-${idx}">Copy Markdown</button>
+          </div>
+          <textarea id="mk-rd-${idx}" readonly rows="7" style="width:100%;font-family:monospace;font-size:0.84rem;padding:10px;border-radius:8px;border:1px solid var(--border);background:var(--bg-subtle);color:var(--text);">${escapeHtml(`Title: ${entry.reddit.title}\n\n${entry.reddit.bodyMarkdown}`)}</textarea>
+        </div>
+      </div>
+    </section>`;
+    })
+    .join("\n    ");
+
+  return `${renderHead({
+    title: "Social Distribution & RSS Promo Kit",
+    description: "Zero-token generated US social copy, OG cards, Pinterest cheat sheets, and RSS automation feed for MarginKit.",
+    canonical,
+    config,
+    robots: "noindex, nofollow"
+  })}
+<body>
+${renderHeader(config)}
+<main class="container">
+  <section class="hero hero-compact">
+    <span class="badge">Unlisted Operator Kit • Zero AI Tokens</span>
+    <h1 style="margin-top:10px;">US Social &amp; RSS Distribution Kit</h1>
+    <p class="hero-subtitle">Auto-generated on every static build. Connect <code>${escapeHtml(rssUrl)}</code> to Buffer, Make.com, or Pinterest RSS auto-publish, or copy ready-made English breakdowns below.</p>
+  </section>
+  ${cardsHtml}
+</main>
+${renderFooter(config)}
+<script>
+document.querySelectorAll(".mk-copy-snippet").forEach(function (btn) {
+  btn.addEventListener("click", function () {
+    var el = document.getElementById(btn.getAttribute("data-target"));
+    if (!el) return;
+    navigator.clipboard.writeText(el.value).then(function () {
+      var prev = btn.textContent;
+      btn.textContent = "Copied!";
+      setTimeout(function () { btn.textContent = prev; }, 1400);
+    });
+  });
+});
+</script>
 </body>
 </html>`;
 }

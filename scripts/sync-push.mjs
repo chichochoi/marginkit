@@ -57,7 +57,8 @@ if (!porcelain) {
   process.exit(0);
 }
 
-run("git", ["commit", "-m", "feat(tools): refill staged calculator reservoir"]);
+const commitMsg = process.argv[2] || "feat(tools): refill staged calculator reservoir";
+run("git", ["commit", "-m", commitMsg]);
 
 if (hasOrigin()) {
   if (hasRemoteMain()) {

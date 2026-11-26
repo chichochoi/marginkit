@@ -30,8 +30,13 @@ MarginKit은 **유료 AI API 비용 0원**, **서버 호스팅 비용 0원**, �
   * **creator:** Lemon Squeezy / beehiiv / ConvertKit
 * **적용 방법:**
   1. `data/affiliates.json` 파일을 엽니다.
-  2. 해당 카테고리의 `"url"`을 본인의 제휴 링크로 바꾸고, `"isAffiliate": true`로 변경합니다. (자동으로 FTC 영문 제휴 공시 문구와 `rel="sponsored"` 속성이 적용됩니다.)
-  3. 저장 후 `npm run sync` 실행(또는 다음 자동화 시 자동 반영).
+  2. 카테고리 기본 배너는 최상위 키(`"ecommerce"`, `"creator"` 등)의 `"url"`을 본인의 제휴 링크로 바꾸고 `"isAffiliate": true`로 변경합니다.
+  3. 특정 계산기(또는 접두사 그룹)에만 전용 핀셋 배너를 띄우려면 `"bySlug"` 객체에 슬러그 또는 와일드카드(`"amazon-*"`, `"printify-*"`) 키를 추가하면 카테고리 기본값보다 우선 적용됩니다.
+  4. 저장 후 `npm run sync` 실행(또는 다음 자동화 시 자동 반영).
+
+### C. 초기 트래픽 부스터 (무토큰 SNS 카피 팩 & 무인 RSS 연동)
+* `npm run build` 실행 시 AI 토큰 소모 없이 모든 계산기의 OG 카드(`/og/<slug>.svg`), Pinterest 세로 치트시트(`/pins/<slug>.svg`), 채널별 영문 홍보 문구(`data/social-pack.json` 및 비공개 운영 대시보드 `/promo-kit/`)가 자동 생성됩니다.
+* Buffer / Make.com 무료 플랜 등에 `https://chichochoi.github.io/marginkit/rss.xml` 피드를 연결해 두면 매일 밤 새 계산기 발행 시 영문 SNS(Pinterest / Threads / Bluesky)로 자동 포스팅됩니다.
 
 ### B. 구글 애드센스(Google AdSense) & 커스텀 도메인 연결 (권장 시기: 일 방문자 발생 시작 후)
 * **중요:** 구글 애드센스는 원칙적으로 `*.github.io` 무료 서브도메인 승인이 어렵고, 본인 소유의 1차 도메인(예: `marginkit.com` 또는 `.org` 등 연 약 \$10~12)이 필요합니다.
