@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-11-25T22:37:24.320Z",
+  "updatedAt": "2026-11-26T06:16:26.344Z",
   "publishedCount": 9,
-  "stagedCount": 6,
+  "stagedCount": 7,
   "published": [
     {
       "slug": "amazon-fba-margin-roas-calculator",
@@ -70,6 +70,12 @@
       "shortTitle": "LLC vs S-Corp Tax Savings",
       "category": "tax",
       "queuedOrder": 7
+    },
+    {
+      "slug": "poshmark-mercari-depop-fee-calculator",
+      "shortTitle": "Poshmark vs Mercari vs Depop Fees",
+      "category": "ecommerce",
+      "queuedOrder": 8
     },
     {
       "slug": "printify-etsy-pod-profit-calculator",
