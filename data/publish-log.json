@@ -1,10 +1,15 @@
 {
-  "lastPublishedDate": "2026-11-25",
+  "lastPublishedDate": "2026-11-27",
   "history": [
     {
       "date": "2026-11-25",
       "slug": "ebay-final-value-fee-calculator",
       "title": "eBay Final Value Fee Calculator"
+    },
+    {
+      "date": "2026-11-27",
+      "slug": "upwork-freelancer-fee-net-calculator",
+      "title": "Upwork Freelancer Fee Calculator"
     }
   ]
 }

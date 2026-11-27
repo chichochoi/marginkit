@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-11-27T05:07:35.134Z",
-  "publishedCount": 9,
-  "stagedCount": 7,
+  "updatedAt": "2026-11-27T05:08:24.647Z",
+  "publishedCount": 10,
+  "stagedCount": 6,
   "published": [
     {
       "slug": "amazon-fba-margin-roas-calculator",
@@ -52,6 +52,12 @@
       "updatedAt": "2026-11-25"
     },
     {
+      "slug": "upwork-freelancer-fee-net-calculator",
+      "shortTitle": "Upwork Freelancer Fee Calculator",
+      "category": "freelance",
+      "updatedAt": "2026-11-27"
+    },
+    {
       "slug": "us-1099-self-employment-tax-calculator",
       "shortTitle": "US 1099 Tax Calculator",
       "category": "tax",
@@ -88,12 +94,6 @@
       "shortTitle": "SaaS MRR, Churn & LTV Calculator",
       "category": "payments",
       "queuedOrder": 6
-    },
-    {
-      "slug": "upwork-freelancer-fee-net-calculator",
-      "shortTitle": "Upwork Freelancer Fee Calculator",
-      "category": "freelance",
-      "queuedOrder": 2
     },
     {
       "slug": "youtube-rpm-sponsorship-rate-calculator",

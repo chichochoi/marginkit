@@ -1,9 +1,38 @@
 {
-  "updatedAt": "2026-11-27T05:07:35.118Z",
+  "updatedAt": "2026-11-27T05:08:24.639Z",
   "rssFeedUrl": "https://chichochoi.github.io/marginkit/rss.xml",
   "promoKitUrl": "https://chichochoi.github.io/marginkit/promo-kit/",
-  "count": 9,
+  "count": 10,
   "items": [
+    {
+      "slug": "upwork-freelancer-fee-net-calculator",
+      "shortTitle": "Upwork Freelancer Fee Calculator",
+      "title": "Upwork 10% Service Fee & Net Payout Calculator (2026)",
+      "category": "freelance",
+      "updatedAt": "2026-11-27",
+      "url": "https://chichochoi.github.io/marginkit/tools/upwork-freelancer-fee-net-calculator/",
+      "ogImageUrl": "https://chichochoi.github.io/marginkit/og/upwork-freelancer-fee-net-calculator.svg",
+      "pinImageUrl": "https://chichochoi.github.io/marginkit/pins/upwork-freelancer-fee-net-calculator.svg",
+      "sampleInputs": "Contract Total or Target Net: $1,000, Calculation Mode: Standard: Net Payout From Bid",
+      "kpiSummary": "Net Take-Home Payout: $893.01 | Total Client Bid / Charge: $1,000.00 | Upwork Service Fee: $100.00",
+      "rssSummary": "Most operators underestimate hidden fee stacking on Upwork Freelancer Fee. Baseline (Contract Total or Target Net: $1,000, Calculation Mode: Standard: Net Payout From Bid) → Net Take-Home Payout… Tip: Amortize Connects Across Your Win Rate: If you spend 16 Connects ($2.40) per proposal and win 1 in 4 jobs, each won contract carr…",
+      "threadsBluesky": "Most operators underestimate hidden fee stacking on Upwork Freelancer Fee. Baseline (Contract Total or Target Net: $1,000, Calculation Mode: Standard: Net Payout From Bid) → Net Take-Home Payout…\n\nFree 2026 interactive breakdown: https://chichochoi.github.io/marginkit/tools/upwork-freelancer-fee-net-calculator/\n#FreelanceLife #ConsultingRates",
+      "pinterest": {
+        "board": "Freelance Pricing & Independent Consulting",
+        "title": "Upwork Freelancer Fee Calculator (2026 US Fee & Profit Cheat Sheet)",
+        "description": "Calculate Upwork freelancer net payout after the 10% flat service fee, Connects cost, and withdrawal fees, or solve the exact client rate to bid. Baseline (Contract Total or Target Net: $1,000, Calculation Mode: Standard: Net Payout From Bid) → Net Take-Home Payout: $893.01 | Total Client Bid / Charge: $1,000.00 | Upwork Service Fee: $100.00. Pro tip: Amortize Connects Across Your Win Rate: If you spend 16 Connects ($2.40) per proposal and win 1 in 4 jobs, each won contract carries $9…",
+        "link": "https://chichochoi.github.io/marginkit/tools/upwork-freelancer-fee-net-calculator/",
+        "imageUrl": "https://chichochoi.github.io/marginkit/pins/upwork-freelancer-fee-net-calculator.svg"
+      },
+      "reddit": {
+        "subreddits": [
+          "r/Upwork",
+          "r/freelance"
+        ],
+        "title": "2026 US Math Breakdown: Upwork Freelancer Fee Calculator (Exact Order of Operations + Sample Scenario)",
+        "bodyMarkdown": "Put together a clean 2026 breakdown for anyone modeling **Upwork Freelancer Fee Calculator** unit economics (Contract Total or Target Net: $1,000, Calculation Mode: Standard: Net Payout From Bid):\n\n### 1. Baseline Numbers\n- **Summary:** Net Take-Home Payout: $893.01 | Total Client Bid / Charge: $1,000.00 | Upwork Service Fee: $100.00\n- **Verdict:** You keep 89.3% of client billing — Total platform, Connects, and transfer drag is $106.99.\n\n| Component | Amount | Share |\n| :--- | ---: | ---: |\n| Freelancer Net Payout | $893.01 | 89.3% |\n| Upwork Service Fee | $100.00 | 10.0% |\n| Connects & Transfer Fees | $6.99 | 0.7% |\n\n### 2. Order of Operations\n1. Standard Mode: Service Fee = Contract × Fee %; Net Payout = Contract - Service Fee - Connects - Withdrawal Fee\n2. Reverse Mode: Client Charge = (Target Net + Connects + Withdrawal Fee) / (1 - Fee %)\n3. Effective Take-Home % = Net Payout / Total Client Charge\n\n### 3. Practical Margin Takeaways\n- **Amortize Connects Across Your Win Rate:** If you spend 16 Connects ($2.40) per proposal and win 1 in 4 jobs, each won contract carries $9.60 in Connects overhead.\n- **Use Reverse Bidding on Hourly Proposals:** To clear $90/hr net after Upwork's 10% cut, quote $100/hr on your proposal.\n- **Batch Withdrawals to Minimize Transfer Fees:** Withdraw bi-weekly via free US ACH rather than frequent paid instant payouts.\n\n*(If you want to plug in your own SKU/retainer numbers in the browser, I put the free interactive version here: https://chichochoi.github.io/marginkit/tools/upwork-freelancer-fee-net-calculator/)*"
+      }
+    },
     {
       "slug": "amazon-fba-margin-roas-calculator",
       "shortTitle": "Amazon FBA Margin Calculator",

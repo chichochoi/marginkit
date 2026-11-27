@@ -6,7 +6,7 @@ export const meta = {
   metaDescription: "Calculate Upwork freelancer net payout after the 10% flat service fee, Connects cost, and withdrawal fees, or solve the exact client rate to bid.",
   heroSubtitle: "Know your exact Upwork take-home earnings or reverse-calculate the bid rate needed to hit your net target.",
   badge: "2026 Upwork US",
-  updatedAt: "2026-11-25",
+  updatedAt: "2026-11-27",
   queuedOrder: 2,
   inputs: [
     { id: "contractAmount", label: "Contract Total or Target Net", type: "number", defaultValue: 1000, min: 0, step: 10, prefix: "$" },
