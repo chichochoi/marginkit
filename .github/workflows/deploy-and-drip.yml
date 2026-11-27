@@ -52,7 +52,7 @@ jobs:
           node scripts/drip-publish.mjs
           if [ -n "$(git status --porcelain)" ]; then
             node scripts/build.mjs
-            git add tools/ data/publish-log.json data/catalog-index.json
+            git add -A
             git commit -m "chore(drip): publish daily calculator"
             git pull --rebase origin main
             git push origin main
