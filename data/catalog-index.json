@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-11-27T05:34:54.441Z",
+  "updatedAt": "2026-11-27T11:16:30.075Z",
   "publishedCount": 10,
-  "stagedCount": 6,
+  "stagedCount": 7,
   "published": [
     {
       "slug": "amazon-fba-margin-roas-calculator",
@@ -65,6 +65,12 @@
     }
   ],
   "staged": [
+    {
+      "slug": "airbnb-vrbo-host-net-payout-calculator",
+      "shortTitle": "Airbnb & Vrbo Host Payout",
+      "category": "ecommerce",
+      "queuedOrder": 9
+    },
     {
       "slug": "gumroad-lemonsqueezy-fee-comparison",
       "shortTitle": "Gumroad vs Lemon Squeezy Fees",
