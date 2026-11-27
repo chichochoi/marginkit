@@ -44,5 +44,15 @@
     "url": "https://wise.com/us/business/",
     "isAffiliate": false
   },
-  "bySlug": {}
+  "bySlug": {
+    "amazon-*": {
+      "partnerName": "Helium 10",
+      "badge": "Amazon FBA & PPC Suite",
+      "headline": "Find high-margin FBA niches & cut wasted Amazon PPC ad spend",
+      "description": "Validate real Amazon US search volume, competitor BSR velocity, FBA fee estimates, and break-even ACOS keywords before ordering inventory.",
+      "ctaText": "Start Free on Helium 10",
+      "url": "https://i.helium10.com/9Vkm9Q",
+      "isAffiliate": true
+    }
+  }
 }
